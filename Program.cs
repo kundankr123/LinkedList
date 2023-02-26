@@ -12,9 +12,14 @@
             //list.Addatbegning(30);
             //list.Addatbegning(56);
 
+            //list.Addatend(56);
+            //list.Addatend(30);
+            //list.Addatend(70);
+
             list.Addatend(56);
-            list.Addatend(30);
             list.Addatend(70);
+            list.PrintList();
+            list.InsertAfter(56, 30);
             list.PrintList();
         }   
     }

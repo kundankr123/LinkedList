@@ -43,7 +43,30 @@ namespace LinkedList
             }
         }
 
-       
+        public void InsertAfter(int existingData, int newData)
+        {
+            Node current = Head;
+
+            while (current != null && current.Data != existingData)
+            {
+                current = current.Next;
+            }
+
+            if (current == null)
+            {
+                // for the case when existing node with the given value was not found.
+                Console.WriteLine("Node with value " + existingData + " not found.");
+            }
+            else
+            {
+                Node newNode = new Node(newData);
+                newNode.Next = current.Next;
+                current.Next = newNode;
+            }
+        }
+
+
+
         public void PrintList()
         {
             Node current = Head;
