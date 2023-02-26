@@ -18,11 +18,18 @@
 
             list.Addatend(56);
             list.Addatend(70);
-            list.PrintList();
+            //list.PrintList();
             list.InsertAfter(56, 30);
             list.PrintList();
-            list.Pop();
+
+            //list.Pop();
+            //list.PrintList();
+
+            int poppedValue = list.popLast();
+
             list.PrintList();
+
+
         }   
     }
 }

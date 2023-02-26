@@ -77,7 +77,37 @@ namespace LinkedList
             Head = Head.Next;
         }
 
+        public int popLast()
+        {
+            if (Head == null)
+            {
+                throw new Exception("Cannot pop from an empty list.");
+            }
+            else if (Head.Next == null)
+            {
 
+                int result = Head.Data;
+                Head = null;
+                return result;
+            }
+            else
+            {
+
+                Node current = Head;
+                while (current.Next.Next != null)
+                {
+                    current = current.Next;
+                }
+
+
+                int result = current.Next.Data;
+
+
+                current.Next = null;
+
+                return result;
+            }
+        }
 
         public void PrintList()
         {
