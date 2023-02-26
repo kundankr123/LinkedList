@@ -154,6 +154,18 @@ namespace LinkedList
             }
         }
 
+        public int size()
+        {
+            int count = 0;
+            Node current = Head;
+            while (current != null)
+            {
+                count++;
+                current = current.Next;
+            }
+            return count;
+        }
+
         public void PrintList()
         {
             Node current = Head;

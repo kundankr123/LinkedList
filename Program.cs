@@ -32,9 +32,12 @@
             //bool result = list.Search(30);
             //Console.WriteLine("Value 30 found: " + result);
 
-            list.Delete(30);
-            list.PrintList();
+            //list.Delete(30);
+            //list.PrintList();
 
+
+            int length = list.size();
+            Console.WriteLine("Size of list: " + length);
 
         }   
     }
