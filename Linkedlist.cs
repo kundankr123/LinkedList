@@ -125,6 +125,35 @@ namespace LinkedList
             return false;
         }
 
+
+        public void Delete(int value)
+        {
+            if (Head == null)
+            {
+                throw new Exception("Cannot delete from an empty list.");
+            }
+            else if (Head.Data == value)
+            {
+                Head = Head.Next;
+            }
+            else
+            {
+                Node current = Head;
+                while (current.Next != null && current.Next.Data != value)
+                {
+                    current = current.Next;
+                }
+
+                if (current.Next == null)
+                {
+                    throw new Exception("Value not found in list.");
+                }
+
+                // Removing the node with the matching value.
+                current.Next = current.Next.Next;
+            }
+        }
+
         public void PrintList()
         {
             Node current = Head;

@@ -29,8 +29,11 @@
 
             //list.PrintList();
 
-            bool result = list.Search(30);
-            Console.WriteLine("Value 30 found: " + result);
+            //bool result = list.Search(30);
+            //Console.WriteLine("Value 30 found: " + result);
+
+            list.Delete(30);
+            list.PrintList();
 
 
         }   
