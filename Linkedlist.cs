@@ -65,6 +65,18 @@ namespace LinkedList
             }
         }
 
+        public void Pop()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("You cannot pop from an empty list.");
+            }
+
+            int result = Head.Data;
+            Console.WriteLine("Poped Element:" + result);
+            Head = Head.Next;
+        }
+
 
 
         public void PrintList()

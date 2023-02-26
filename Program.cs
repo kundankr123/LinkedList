@@ -21,6 +21,8 @@
             list.PrintList();
             list.InsertAfter(56, 30);
             list.PrintList();
+            list.Pop();
+            list.PrintList();
         }   
     }
 }
