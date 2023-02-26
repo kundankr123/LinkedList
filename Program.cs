@@ -25,9 +25,12 @@
             //list.Pop();
             //list.PrintList();
 
-            int poppedValue = list.popLast();
+            //int poppedValue = list.popLast();
 
-            list.PrintList();
+            //list.PrintList();
+
+            bool result = list.Search(30);
+            Console.WriteLine("Value 30 found: " + result);
 
 
         }   
