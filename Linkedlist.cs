@@ -10,7 +10,22 @@ namespace LinkedList
     {
         public Node Head;
 
-        public void Add(int data)
+
+        public void Addatbegning(int data)
+        {
+            Node newNode = new Node(data);
+            if (Head == null)
+            {
+                Head = newNode;
+            }
+            else
+            {
+                newNode.Next = Head;
+                Head = newNode;
+            }
+        }
+
+        public void Addatend(int data)
         {
             Node newNode = new Node(data);
             if (Head == null)
@@ -28,20 +43,7 @@ namespace LinkedList
             }
         }
 
-        public void Addatbegning(int data)
-        {
-            Node newNode = new Node(data);
-            if (Head == null)
-            {
-                Head = newNode;
-            }
-            else
-            {
-                newNode.Next = Head;
-                Head = newNode;
-            }
-        }
-
+       
         public void PrintList()
         {
             Node current = Head;
