@@ -8,9 +8,9 @@
 
 
             Linkedlist list = new Linkedlist();
-            list.Add(70);
-            list.Add(30);
-            list.Add(56);
+            list.Addatbegning(70);
+            list.Addatbegning(30);
+            list.Addatbegning(56);
             list.PrintList();
         }   
     }

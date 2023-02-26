@@ -28,6 +28,20 @@ namespace LinkedList
             }
         }
 
+        public void Addatbegning(int data)
+        {
+            Node newNode = new Node(data);
+            if (Head == null)
+            {
+                Head = newNode;
+            }
+            else
+            {
+                newNode.Next = Head;
+                Head = newNode;
+            }
+        }
+
         public void PrintList()
         {
             Node current = Head;
